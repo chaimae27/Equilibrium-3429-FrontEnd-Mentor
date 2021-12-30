@@ -1,0 +1,135 @@
+body {
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+  font-family: "https://fonts.google.com/specimen/Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container .card {
+  background-color: hsl(216, 50%, 16%);
+  /* background-color: whitesmoke; */
+  border-radius: 15px;
+  margin: 40px auto;
+  width: 30%;
+  height: 38rem;
+}
+
+/* Responsive */
+@media (min-width: 320px) {
+  .container .card {
+    width: 334px;
+  }
+
+  .container .card .content .image {
+    width: 270px;
+    height: 40%;
+  }
+
+  .container .card .content {
+    padding: 30px;
+  }
+}
+
+.container .card .content {
+  position: relative;
+}
+
+.container .card .content .hover {
+  position: absolute;
+  top: 30px;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 80.5%;
+  height: 46.5%;
+  border-radius: 17px;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container .card .content .hover:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .card .content .hover img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .card .content .image {
+  max-width: 24rem;
+  max-height: 24rem;
+  border-radius: 18px;
+  cursor: pointer;
+  /* margin: 0 8px; */
+  /* margin-left: 30px;
+  margin-top: 20px; */
+}
+
+/* .container .card .content .image:hover {
+  background: url("images/icon-ethereum.svg");
+  background-color: #00fff8;
+} */
+
+.container .card .content .info h2 {
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  font-size: 25px;
+}
+
+.container .card .content .info p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  margin-top: 30px;
+}
+
+.container .card .content .date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.container .card .content .date .right-text {
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+  margin-top: 20px;
+}
+
+.container .card .content .user-info {
+  display: flex;
+  margin-top: -4px;
+}
+
+.container .card .content .user-info p {
+  color: hsl(215, 51%, 70%);
+  margin: 22px 0 0 14px;
+}
+
+.container .card .content .user-info .user-name {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.container .card .content .user-info .user-name:hover,
+.container .card .content .info h2:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.container .card .content .user-info .avatar {
+  width: 34px;
+  margin-top: 10px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.left-text {
+  color: #00fff8;
+}
